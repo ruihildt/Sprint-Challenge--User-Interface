@@ -64,12 +64,73 @@ h1, h2, h3, h4, h5 {
 
 p {
     line-height: 1.4;
+    font-size: 0.9em;
 }
+
+a {
+    text-decoration: none;
+    font-size: 0.8em;
+    color: black;
+}
+
+a:hover {
+    color: rgba(0,0,0,0.8)
+}
+
+/*All Pages*/
 
 .container {
     width: 800px;
     margin: 0 auto;
 }
+
+header {
+    margin: 20px 0;
+    /*Flex Container*/
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+header nav {
+    /*Flex Container*/
+    display: flex;
+    justify-content: space-around;
+    /*Flex Item*/
+    flex-basis: 81%;
+}
+
+header img {
+    /*Flex Item*/
+    flex-basis: 18%;
+}
+
+footer {
+    width: 100%;
+    background: black;
+}
+
+footer nav {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 2%;
+}
+
+footer nav a {
+    color: white;
+}
+
+footer nav a:hover {
+    color:rgba(255,255,255,0.8)
+}
+
+.jumbo {
+    margin:42px 0 22px 0;
+}
+
+/*Home Page*/
 
 .top-content {
     display: flex;
@@ -104,12 +165,51 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.box-1 {
+    background-color: teal;
+}
+
+.box-2 {
+    background-color: gold;
+}
+
+.box-3 {
+    background-color: cadetblue;
+}
+
+.box-4 {
+    background-color: coral;
+}
+
+.box-5 {
+    background-color: crimson;
+}
+
+.box-6 {
+    background-color: forestgreen;
+}
+
+.box-7 {
+    background-color: darkorchid;
+}
+
+.box-8 {
+    background-color: hotpink;
+}
+
+.box-9 {
+    background-color: indigo;
+}
+
+.box-10 {
+    background-color: dodgerblue;
 }
 
 .bottom-content {
@@ -126,21 +226,48 @@ p {
     padding-right: 0;
 }
 
-footer {
-    width: 100%;
-    background: black;
+/*About Page*/
+
+.about-top {
+    margin-bottom: 20px;
+    padding: 0 20px 20px 20px;
+    border-bottom: 1px dashed black;
 }
 
-footer nav {
-    width: 60%;
+.about-middle {
+    margin: 30px 0;
+    /*Flex Container*/
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-footer nav a {
-    color: white;
-    text-decoration: none;
+.about-middle .about-item {
+    border-bottom: 1px dashed black;
+    padding-bottom: 5px;
+    margin-bottom: 40px;
+    /*Flex Container*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 418px;
+    /*flex Item*/
+    flex-basis: 44%;
+}
+
+.about-bottom {
+    margin-bottom: 20px;
+    padding: 0 20px 20px 20px;
+}
+
+.about-item a {
+    padding: 10px 30px;
+    margin: 20px 0;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+.about-item img {
+    margin-bottom: 10px;
 }
